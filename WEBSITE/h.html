@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head  style="background-color:powderblue;"> 
+  <button hsapce="150"><a href="h1.html">FOR YESTRDAY REPORT 15-04-2020</a></button> 
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+      title:{
+        text: "Number of people comming out from quarantine DAY 14-03-2020"
+      },
+
+      axisX:{
+        title: "time",
+        gridThickness: 2,
+        interval:2, 
+        intervalType: "hour",        
+        valueFormatString: "hh TT K", 
+        labelAngle: -20
+      },
+      axisY:{
+        title: "distance"
+      },
+      data: [
+      {        
+        type: "line",
+        dataPoints: [//array
+        {x: new Date(Date.UTC (2020, 04, 15, 1,0) ), y: null },
+        {x: new Date( Date.UTC (   2020, 04, 15,2,0) ), y: null  },
+        {x: new Date( Date.UTC(   2020, 04, 15,3,0) ), y: 43 },
+        {x: new Date( Date.UTC(   2020, 04, 15,4,0) ), y: 60},
+        {x: new Date( Date.UTC(   2020, 04, 15,5,0) ), y: 40},
+        {x: new Date( Date.UTC(   2020, 04, 15,6,0) ), y: 20},
+        {x: new Date( Date.UTC(   2020, 04, 15,7,0) ), y: 66},
+        {x: new Date( Date.UTC(   2020, 04, 15,8,0) ), y: 60},
+        {x: new Date( Date.UTC(   2020, 04, 15,9,0) ), y: null},
+        {x: new Date( Date.UTC(   2020, 04, 15,10,0) ), y: 60}
+	
+        ]
+      }
+      
+      ]
+    });
+
+chart.render();
+}
+
+</script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+<script src="js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="js/confer.bundle.js"></script>
+    <!-- Active -->
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body  style="background-color:;">
+  
+  <div id="chartContainer" style="height: 300px; width: 100%;">
+<br>
+<br>
+
+</div>
+<div class="col-12 col-md-6 col-xl-3">
+        <div class="single-we-offer-content text-center wow fadeInUp" data-wow-delay="0.3s">
+                        <!-- Icon -->
+                <div class="offer-icon">
+                         <img src="img/core-img/icon-2.png" alt="">
+                </div>
+                        <h5>
+                            <a href="h.html">
+                                APPLICATION
+                            </a>
+                        </h5>
+                        <p>You Can Also Install Application to see the trends and report to the nearest hospital.</p>
+                </div>
+                </div>
+</body>
+</html>

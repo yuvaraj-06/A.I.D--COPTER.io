@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head  style="background-color:powderblue;"> 
+  <button hsapce="150"><a href="h1.html">FOR YESTRDAY REPORT 14-03-2020</a></button> 
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+      title:{
+        text: "CO EMMISSION DAY 14-03-2020"
+      },
+
+      axisX:{
+        title: "time",
+        gridThickness: 2,
+        interval:2, 
+        intervalType: "hour",        
+        valueFormatString: "hh TT K", 
+        labelAngle: -20
+      },
+      axisY:{
+        title: "distance"
+      },
+      data: [
+      {        
+        type: "line",
+        dataPoints: [//array
+        {x: new Date(Date.UTC (2020, 03, 15, 1,0) ), y: 40 },
+        {x: new Date( Date.UTC (   2020, 03, 15,2,0) ), y: 38  },
+        {x: new Date( Date.UTC(   2020, 03, 15,3,0) ), y: 43 },
+        {x: new Date( Date.UTC(   2020, 03, 15,4,0) ), y: null},
+        {x: new Date( Date.UTC(   2020, 03, 15,5,0) ), y: 40},
+        {x: new Date( Date.UTC(   2020, 03, 15,6,0) ), y: 59},
+        {x: new Date( Date.UTC(   2020, 03, 15,7,0) ), y: 66},
+        {x: new Date( Date.UTC(   2020, 03, 15,8,0) ), y: 60},
+        {x: new Date( Date.UTC(   2020, 03, 15,9,0) ), y: 53},
+        {x: new Date( Date.UTC(   2020, 03, 15,10,0) ), y: 60}
+	
+        ]
+      }
+      
+      ]
+    });
+
+chart.render();
+}
+
+</script>
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+
+<body  style="background-color:powderblue;">
+  
+  <div id="chartContainer" style="height: 300px; width: 100%;">
+  </div>
+</body>
+</html>
